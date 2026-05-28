@@ -1,0 +1,39 @@
+CLASSICAL CHATBOT                    AI CHATBOT
+─────────────────                    ──────────
+User Input                           User Input
+    ↓                                    ↓
+Keyword Matching                     Preprocessing (tokenization)
+    ↓                                    ↓
+Decision Tree / IF-ELSE              NLU (Intent + Entity extraction)
+    ↓                                    ↓
+Pre-written Response                 Dialogue Manager (context tracking)
+    ↓                                    ↓
+Output                               LLM / Response Generator
+                                         ↓
+                                     Post-processing (safety, formatting)
+                                         ↓
+                                     Output
+
+
+
+AI CHABOT DEVELOPMENT PROCESS
+───────────────────────────── 
+Problem Definition
+       ↓
+Data Collection & Annotation
+       ↓
+Preprocessing
+       ↓
+NLU Training (Intent + Entity)
+       ↓
+Dialogue Manager Setup
+       ↓
+Response Generation (RAG / LLM)
+       ↓
+Knowledge Base Integration
+       ↓
+Testing & Evaluation
+       ↓
+Deployment (API + Channel)
+       ↓
+Monitoring & Continuous Improvement
