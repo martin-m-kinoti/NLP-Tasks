@@ -123,13 +123,54 @@ A complete, progressive build of a smart chatbot from scratch, moving through th
 
 ---
 
+## 9. Word Embeddings
+
+**What was covered:**
+Representing words as dense numerical vectors that capture semantic meaning. Three embedding approaches were implemented and compared in `week6/embeddings.ipynb`.
+
+**Models covered:**
+
+| Model | Description |
+|---|---|
+| Word2Vec | Trained from scratch on a toy corpus using `gensim`; demonstrates vector lookup, `most_similar`, and `similarity` |
+| GloVe | Pre-trained 50-dimensional vectors loaded via `gensim.downloader` (`glove-wiki-gigaword-50`), trained on Wikipedia + Gigaword |
+| FastText | Trained from scratch like Word2Vec but represents each word as a sum of character n-gram vectors — handles out-of-vocabulary words |
+
+**Key concepts:**
+- Dense vector representations vs. sparse one-hot encoding
+- Semantic similarity encoded in vector space
+- Character n-grams (FastText) for morphological generalization
+- PCA dimensionality reduction to visualize 50-dimensional embeddings in 2D
+
+**Tools used:** gensim, scikit-learn (PCA), matplotlib
+
+---
+
+## 10. Mental Health Sentiment Analysis
+
+**What was covered:**
+Applying NLP to a real-world mental health dataset (`week6/mental_health.ipynb`). Statements are classified by mental health status (e.g., Anxiety, Depression, Stress, Bipolar, Normal) using the `Combined Data.csv` dataset.
+
+**Key concepts:**
+- Text classification on clinical/social text
+- Loading and exploring labelled mental health statement data with pandas
+- Visualizing class distributions with matplotlib
+
+**Dataset:** `mental_health_data/Combined Data.csv` — statement + status label pairs
+
+**Tools used:** pandas, matplotlib
+
+---
+
 ## Technologies Used 
 
 | Category | Tools |
 |---|---|
 | Classical NLP | NLTK, spaCy, TextBlob |
-| ML / Deep Learning | scikit-learn
-| Datasets | Movie Reviews Dataset |
+| Word Embeddings | gensim (Word2Vec, FastText, GloVe via downloader) |
+| ML / Deep Learning | scikit-learn |
+| Visualization | matplotlib, PCA (dimensionality reduction) |
+| Datasets | Movie Reviews Dataset, Mental Health Combined Data |
 | API | OpenAI Python SDK |
 | Environment | python-dotenv, os.getenv |
 
