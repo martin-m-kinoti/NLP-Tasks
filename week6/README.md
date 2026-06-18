@@ -1,4 +1,4 @@
-# Week 6 — Word Embeddings & Mental Health Sentiment Analysis
+# BIT4133-Week6-Word-Embeddings
 
 ## Overview
 
